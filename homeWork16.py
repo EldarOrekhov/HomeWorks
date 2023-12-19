@@ -52,7 +52,7 @@ def countPrimes(lst):
     count = 0
     for num in lst:
         if num < 2:
-            break
+            continue
         for i in range(2, int(num // 2) + 1):
             if num % i == 0:
                 count -= 1
